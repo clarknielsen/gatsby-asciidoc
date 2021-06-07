@@ -3,14 +3,13 @@ module.exports = {
     title: "My Gatsby Site",
   },
   plugins: [
-    "gatsby-transformer-remark",
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: "pages",
-        path: "./src/pages/",
+        name: `content`,
+        path: `${__dirname}/src/content`,
       },
-      __key: "pages",
     },
-  ],
+    `gatsby-transformer-asciidoc`
+  ]
 };

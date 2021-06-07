@@ -1,0 +1,19 @@
+= Oh, Hello Warld
+
+:page-path: /hello-world
+
+== Let's Code
+
+Here's some Kotlin:
+
+[source,kotlin]
+----
+class Employee(
+    val firstName: String,
+    val lastName: String = "",
+    val id: Int = 0,
+    val photoURL: String = ""
+) {
+    fun getFullName(): String = "${this.firstName} ${this.lastName}"
+}
+----
